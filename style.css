@@ -1,0 +1,71 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    text-align: center;
+    background-color: blueviolet;
+}
+.choice-button{
+    height: 100px;
+    width: 100px;
+    border: none;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgb(126, 235, 216);
+    cursor:pointer;
+}
+
+.choice-button:hover{
+    background-color: aqua;
+  box-shadow: 0 8px 15px rgba(5, 5, 5, 0.3);
+  transform: scale(1.05);
+}
+
+.choice-image{
+    height: 80px;
+}
+
+#gameName{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.navBar {
+   
+    background-color: rgb(234, 76, 240);
+    width: 800px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        left: 0;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+#ownerName{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: rgb(241, 245, 241);
+    align-self: flex-end;
+}
+
+#reset{
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(175, 28, 28);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#reset:hover{
+    box-shadow: 4px 4px 10px rgba(5, 5, 5, 0.3) ;
+    background-color: red;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <header class="navBar">
+        <h1 id="gameName">Bat Ball Stump Game</h1>
+      </header>
+    </center>
+    <h3 id="ownerName"><i>Made By Chaitanya More</i></h3>
+
+    <div class="buttons">
+      <button
+        class="choice-button"
+        id="bat"
+        onclick="
+            let computerChoice = generateComputerChoice();
+            let resultMsg = getResult('Bat', computerChoice);
+            showResult('Bat', computerChoice, resultMsg);
+        "
+      >
+        <img src="images/bat.png" alt="Bat image" class="choice-image" />
+      </button>
+
+      <button
+        class="choice-button"
+        id="ball"
+        onclick="
+            computerChoice = generateComputerChoice();
+            resultMsg = getResult('Ball', computerChoice);
+            showResult('Ball', computerChoice, resultMsg);
+        "
+      >
+        <img src="images/ball.png" alt="Ball image" class="choice-image" />
+      </button>
+
+      <button
+        class="choice-button"
+        id="stump"
+        onclick="
+            computerChoice = generateComputerChoice();
+            resultMsg = getResult('Stump', computerChoice);
+            showResult('Stump', computerChoice, resultMsg);
+        "
+      >
+        <img src="images/stump.png" alt="Stump image" class="choice-image" />
+      </button>
+    </div>
+
+    <h3 id="user-move"></h3>
+    <h3 id="computer-move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
+
+    <button id="reset" onclick="resetScore()">Reset Score</button>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
